@@ -1,0 +1,183 @@
+body {
+    background-image: url(data:image/png;base64,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);
+    background-color: #4aaaa5;
+    /*background image - set it as background. When linking image file for css, the file is located
+    relative to your css file. NOT relative to the html file. In this case, we have to go back one 
+    folder*/
+    background-image: url("../images/gravel.png");\
+    width: 960px;
+    margin: 0;
+}
+
+header{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    margin: 0;
+   
+    /* fixed the position relatively to the window */
+    position: fixed;
+    top: 0;
+    left: 163px;
+
+    font-family: 'Roboto', sans-serif;
+    z-index: 3;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    clear: both; /* trying to clear the float from the ul BUT NOT WORKING>*/
+    background-color: #ffffff;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    position: relative;
+    top: 120px;
+    
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 2px solid #dddddd;
+    z-index: 1;
+
+    overflow: auto;
+}
+
+nav {
+    color: #777777;
+    background-color:#ffffff;
+    /* removes the boolented points */
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding-top: 25px; /*move the navigation bar to the right corner*/
+    padding-bottom: 25px;
+    padding-left: 60%;
+    /* make navigation bar fixed to the top */
+    position: fixed;
+    top: 0;
+    border-bottom: solid 2px #cccccc;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+}
+
+a:hover {
+    background-color: #4aaaa5;
+    padding: 15px;
+    color: white;
+}
+
+li {
+    /* make the list display in one line, horizontally */
+    display: inline;
+    float: left;
+    padding-left: 30px;  
+}
+
+li a {
+    
+    text-decoration: none; /*removes the underscore*/
+    color: #777777;
+}
+
+img {
+    float: left;
+    margin: 20px 20px 20px 0px;
+}
+p {
+    color: #777777;
+    line-height: 30px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+.form {
+    clear: both;
+    color: #777777;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input {
+    width: 960px;
+    height: 25px;
+}
+#messageBox {
+    height: 300px;
+}
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-top: 5px solid #4aaaa5;
+
+    z-index: 4;
+}
+
+#footerNote {
+    color: #ffffff;
+}
+
+/* CSS for IMAGES starts here */
+.lable { 
+    background-color:#4aaaa5;
+    z-index: 1;
+    width: 270px;
+    text-align: center;
+    /* height: 30px; */
+    margin:0;
+    padding-top: 0px;
+    padding:0;
+}
+
+.inLable {
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+}
+
+.pictures {
+    width: 600px;
+}
+
+/* CSS for picture labels starts here */
+#lable1 {
+    position: absolute;
+    top: 290px;
+}
+
+#lable2 {
+    position: absolute;
+    top: 290px;
+    left: 310px;
+}
+
+#lable3 {
+    position: absolute;
+    top: 600px;
+}
+
+#lable4 {
+    position: absolute;
+    top: 600px;
+    left: 310px;
+}
+
+#lable5 {
+    position: absolute;
+    top: 910px;
+}
