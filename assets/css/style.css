@@ -13,15 +13,20 @@ header{
     background-color: #4aaaa5;
     color: #ffffff;
     width: 200px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-    margin: 0;
    
-    /* fixed the position relatively to the window */
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 65px;
+    
+    
+
+   
+   
+    /* fixed the position relatively to the window*/
     position: fixed;
     top: 0;
-    left: 163px;
+    left: 143px;
 
     font-family: 'Roboto', sans-serif;
     z-index: 3;
@@ -59,9 +64,9 @@ nav {
     list-style-type: none;
     margin: 0;
     width: 100%;
-    padding-top: 25px; /*move the navigation bar to the right corner*/
-    padding-bottom: 25px;
-    padding-left: 60%;
+    padding-top: 8px; /*move the navigation bar to the right corner*/
+    padding-bottom: 22px;
+    padding-left: 67%;
     /* make navigation bar fixed to the top */
     position: fixed;
     top: 0;
@@ -80,7 +85,7 @@ li {
     /* make the list display in one line, horizontally */
     display: inline;
     float: left;
-    padding-left: 30px;  
+    padding-left: 25px;
 }
 
 li a {
@@ -92,6 +97,11 @@ li a {
 img {
     float: left;
     margin: 20px 20px 20px 0px;
+}
+
+#portImg {
+    width: 272px;
+    margin-left: 2px;
 }
 p {
     color: #777777;
@@ -108,10 +118,22 @@ p {
     margin-top: 20px;
 }
 
+.button {
+    background-color:  #4aaaa5;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #dddddd;
+}
+
 input {
     width: 960px;
     height: 25px;
 }
+
 #messageBox {
     height: 300px;
 }
@@ -163,7 +185,7 @@ footer {
 #lable2 {
     position: absolute;
     top: 290px;
-    left: 310px;
+    left: 316px;
 }
 
 #lable3 {
@@ -174,10 +196,153 @@ footer {
 #lable4 {
     position: absolute;
     top: 600px;
-    left: 310px;
+    left: 316px;
 }
 
 #lable5 {
     position: absolute;
     top: 910px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+
+
+/* Desktop  */
+@media screen and (max-width: 980px) {
+    section {
+        width: 580px;
+        margin-left: 40px;
+    }
+
+    header {
+        left: 40px;
+    }
+
+    input {
+        width: 570px;
+    }
+}
+
+
+
+/* Tablet  */
+@media screen and (max-width: 768px) {
+    section {
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 100px;
+    }
+
+    header {
+        left: 23px;
+    }
+
+    nav {
+        padding-left: 60%;
+    }
+    input {
+        width: 100%;
+    }
+    #messageBox {
+        height: 100px;
+    }
+}
+
+
+
+/* Phone on landscape  */
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+        width: 100%;
+        padding-top:1px;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        /* make navigation bar fixed to the top */
+        position: static;
+        padding-bottom: 30px;
+        padding-top: 1px;
+        padding-left: 23%;
+        border-bottom: solid 2px #cccccc;
+        font-family: 'Roboto', sans-serif;
+        z-index: 2;
+    }
+
+    section {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30px;
+    }
+
+    input {
+        width: 100%;
+    }
+    #messageBox {
+        height: 100px;
+    }
+
+   
+
+    /* CSS for picture labels starts here */
+
+    img {
+        width: 100%;
+        float: left;
+    }
+
+    #portImg {
+        width: 500px;
+        overflow: auto;
+    }
+
+
+    .lable { 
+        width: 92%;
+        
+    }
+
+    #lable1 {
+        position: absolute;
+        top: 520px;
+        left: 22px;
+    }
+
+    #lable2 {
+        position: absolute;
+        top: 1060px;
+        left: 22px;
+        
+    }
+
+    #lable3 {
+        position: absolute;
+        top: 1600px;
+        left: 22px;
+    }
+
+    #lable4 {
+        position: absolute;
+        top: 2140px;
+        left:22px;
+    }
+
+    #lable5 {
+        position: absolute;
+        top:2680px;
+        left: 22px;
+    }
+
 }
