@@ -17,12 +17,8 @@ header {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    height: 65px;
+    height: 55px;
     
-    
-
-   
-   
     /* fixed the position relatively to the window*/
     position: fixed;
     top: 0;
@@ -30,24 +26,22 @@ header {
 
     font-family: 'Roboto', sans-serif;
     z-index: 3;
+    
 }
 
-h2 {
-    color: #4aaaa5;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-}
 
 section {
     clear: both; /* trying to clear the float from the ul BUT NOT WORKING>*/
     background-color: #ffffff;
     width: 960px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
     position: relative;
     top: 120px;
     
+    padding-top: 30px;
     padding-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
@@ -94,22 +88,28 @@ li a {
     color: #777777;
 }
 
-img {
+#myPic {
     float: left;
     margin: 20px 20px 20px 0px;
 }
 
 .portImg {
     width: 272px;
-    margin-left: 2px;
+    margin-left: 40px;
+    margin-top: 0px;
+    border: 3px solid black;
 }
 p {
     color: #777777;
     line-height: 30px;
     font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
     
 }
 
+#contactDiv {
+    height: 650px;
+}
 .form {
     clear: both;
     color: #777777;
@@ -130,12 +130,12 @@ p {
 }
 
 input {
-    width: 960px;
+    width: 860px;
     height: 25px;
 }
 
 #messageBox {
-    height: 300px;
+    height: 100px;
 }
 footer {
     background-color: #666666;
@@ -155,59 +155,49 @@ footer {
 }
 
 /* CSS for IMAGES starts here */
-.lable { 
-    background-color:#4aaaa5;
-    z-index: 1;
-    width: 270px;
+
+
+
+.info {
+    background-color: #4aaaa5;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+    border: 5px outset rgb(218, 216, 216);
+    font-size: 30px;
+}
+
+#imgDiv{
+    height: 2000px;
+    position: relative;
+}
+
+.align-center {
     text-align: center;
-    /* height: 30px; */
-    margin:0;
-    padding-top: 0px;
-    padding:0;
+}
+.margin40 {
+     margin-left: 40px;
+ }
+
+
+.floatingDiv {
+     float: left;
+ }
+#label1 {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.inLable {
-    color: #ffffff;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 25px;
-}
 
-.pictures {
-    width: 600px;
-}
+
+
+
+
 
 /* CSS for picture labels starts here */
-#lable1 {
-    position: absolute;
-    top: 290px;
-}
-
-#lable2 {
-    position: absolute;
-    top: 290px;
-    left: 316px;
-}
-
-#lable3 {
-    position: absolute;
-    top: 600px;
-}
-
-#lable4 {
-    position: absolute;
-    top: 600px;
-    left: 316px;
-}
-
-#lable5 {
-    position: absolute;
-    top: 910px;
-}
-
-
-
-
-
 
 
 
@@ -298,51 +288,10 @@ footer {
 
     /* CSS for picture labels starts here */
 
-    img {
-        width: 100%;
-        float: left;
-    }
 
-    .portImg {
-        width: 500px;
-        overflow: auto;
-    }
+    
 
 
-    .lable { 
-        width: 92%;
-        
-    }
-
-    #lable1 {
-        position: absolute;
-        top: 520px;
-        left: 22px;
-    }
-
-    #lable2 {
-        position: absolute;
-        top: 1060px;
-        left: 22px;
-        
-    }
-
-    #lable3 {
-        position: absolute;
-        top: 1600px;
-        left: 22px;
-    }
-
-    #lable4 {
-        position: absolute;
-        top: 2140px;
-        left:22px;
-    }
-
-    #lable5 {
-        position: absolute;
-        top:2680px;
-        left: 22px;
-    }
+ 
 
 }
